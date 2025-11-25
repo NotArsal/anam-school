@@ -4,7 +4,7 @@ export default function Admissions() {
       <h1 className="text-4xl font-bold text-primary mb-6">Admissions</h1>
 
       <p className="text-gray-700 mb-6">
-        Admissions are open for Classes 1st to 5th. We welcome students from all
+        Admissions are open for Classes 1st to 8th. We welcome students from all
         backgrounds and ensure a smooth admission process for parents.
       </p>
 
