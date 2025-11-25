@@ -43,7 +43,8 @@ export default function Contact() {
       <img
         src="/images/school-map.jpg"
         alt="School Location Map"
-        className="w-full h-72 rounded shadow object-cover"
+        className="w-full max-w-lg rounded shadow"
+        style={{ height: "auto" }}
       />
 
       <p className="mt-4 text-gray-700">
