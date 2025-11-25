@@ -7,7 +7,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-primary text-white p-4 flex items-center justify-between relative">
+    <header className="bg-primary text-white p-4 flex items-center justify-between relative shadow-lg">
       <h1 className="text-xl font-bold">Anam Urdu Primary School</h1>
 
       <button className="md:hidden" onClick={() => setOpen(!open)}>
