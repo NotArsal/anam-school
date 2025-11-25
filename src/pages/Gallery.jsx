@@ -1,16 +1,25 @@
 export default function Gallery() {
   const images = [
-    "https://images.unsplash.com/photo-1516979187457-637abb4f9353",
-    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
-    "https://images.unsplash.com/photo-1509062522246-3755977927d7"
+    "/images/event1.jpg",
+    "/images/event2.jpg",
+    "/images/sports.jpg",
+    "/images/playground.jpg",
+    "/images/classroom1.jpg",
+    "/images/classroom2.jpg",
   ];
 
   return (
     <section className="p-6 md:p-12">
-      <h1 className="text-3xl font-bold mb-6">Gallery</h1>
+      <h1 className="text-4xl font-bold text-primary mb-6">School Gallery</h1>
+
+      <p className="text-gray-700 mb-6">
+        Explore moments from school events, classrooms, celebrations, and daily
+        activities.
+      </p>
+
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((src) => (
-          <img key={src} className="rounded shadow" src={src} alt="" />
+          <img key={src} src={src} className="rounded shadow-lg" />
         ))}
       </div>
     </section>
