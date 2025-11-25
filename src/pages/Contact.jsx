@@ -10,10 +10,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="p-6 md:p-12">
-      <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+    <section className="p-6 md:p-12 leading-7">
+      <h1 className="text-4xl font-bold text-primary mb-6">Contact Us</h1>
 
-      <div className="flex flex-col gap-4 max-w-lg">
+      <div className="flex flex-col gap-4 max-w-lg mb-12">
         <input
           className="p-3 border rounded"
           placeholder="Name"
@@ -29,10 +29,25 @@ export default function Contact() {
           placeholder="Message"
           onChange={(e) => setForm({ ...form, message: e.target.value })}
         />
-        <button className="bg-secondary text-white p-3 rounded" onClick={submit}>
+        <button className="bg-secondary text-white p-3 rounded shadow" onClick={submit}>
           Submit
         </button>
       </div>
+
+      <h2 className="text-3xl font-bold text-primary mb-4">School Location</h2>
+
+      <iframe
+        className="w-full h-72 rounded shadow"
+        loading="lazy"
+        allowFullScreen
+        src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Anam+Urdu+Primary+School"
+      ></iframe>
+
+      <p className="mt-4 text-gray-700">
+        <strong>Address:</strong> Near XYZ Area, Your City, Pin Code<br />
+        <strong>Phone:</strong> +91 XXXXX XXXXX<br />
+        <strong>Email:</strong> info@anamurduprimaryschool.com
+      </p>
     </section>
   );
 }
