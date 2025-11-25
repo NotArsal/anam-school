@@ -45,8 +45,8 @@ export default function Contact() {
 
       <p className="mt-4 text-gray-700">
         <strong>Address:</strong> Near XYZ Area, Your City, Pin Code<br />
-        <strong>Phone:</strong> +91 XXXXX XXXXX<br />
-        <strong>Email:</strong> info@anamurduprimaryschool.com
+        <strong>Phone:</strong> +91 9970995189<br />
+        <strong>Email:</strong> anamurduprimaryschooljintur239@gmail.com
       </p>
     </section>
   );
