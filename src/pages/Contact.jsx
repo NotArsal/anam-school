@@ -29,23 +29,28 @@ export default function Contact() {
           placeholder="Message"
           onChange={(e) => setForm({ ...form, message: e.target.value })}
         />
-        <button className="bg-secondary text-white p-3 rounded shadow" onClick={submit}>
+        <button
+          className="bg-secondary text-white p-3 rounded shadow"
+          onClick={submit}
+        >
           Submit
         </button>
       </div>
 
       <h2 className="text-3xl font-bold text-primary mb-4">School Location</h2>
 
-      <iframe
-        className="w-full h-72 rounded shadow"
-        loading="lazy"
-        allowFullScreen
-        src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Anam+Urdu+Primary+School"
-      ></iframe>
+      {/* 👉 Your screenshot instead of Google Maps iframe */}
+      <img
+        src="/images/school-map.jpg"
+        alt="School Location Map"
+        className="w-full h-72 rounded shadow object-cover"
+      />
 
       <p className="mt-4 text-gray-700">
-        <strong>Address:</strong> Near XYZ Area, Your City, Pin Code<br />
-        <strong>Phone:</strong> +91 9970995189<br />
+        <strong>Address:</strong> Near XYZ Area, Your City, Pin Code
+        <br />
+        <strong>Phone:</strong> +91 9970995189
+        <br />
         <strong>Email:</strong> anamurduprimaryschooljintur239@gmail.com
       </p>
     </section>
